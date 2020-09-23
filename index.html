@@ -15,13 +15,23 @@
     <link rel="stylesheet" href="../smart_order/css/grid.css">
     <link rel="stylesheet" href="../smart_order/css/main.css">
 </head>
+<script>
+    $(document).ready( function(){
+        /*menu btn click event*/
+        $('#menu_btn').click( function(){
+            $('aside').toggle();
+            
+        });
+
+        $('.close_btn').click( function(){
+            $('aside').toggle();
+        });
+    });
+</script>
 
 
 <style>
-    .wrap .header_wrap header div { float: left; }
-    .wrap .header_wrap header .h_middle { margin-left: 174px; width: 52%; }
-    .wrap .header_wrap header .h_right a:first-child { margin-right: 10px; }
-    .wrap .header_wrap header::after { content: ''; display: block; overflow: hidden; clear: both; }
+    
 </style>
 <body>
     <!--wrap {-->
@@ -31,13 +41,13 @@
                 <div class="h_middle"><a href="index.html" class="t_center"><img src="../smart_order/images/logo.png" alt="aurm logo"></a></div>
                 <div class="h_right">
                     <a href="#"><img src="../smart_order/images/cart_icon.png" alt="cart icon image"></a>
-                    <a href="#" class="t_right"><img src="../smart_order/images/menu_btn.png" alt="menu icon"></a>    
+                    <a href="#" class="t_right" id="menu_btn"><img src="../smart_order/images/menu_btn.png" alt="menu icon"></a>    
                 </div>
             </header>
         </div>
 
         <aside>
-            <div><img src="../smart_order/images/close_btn.png" alt="cloase btn"></div>
+            <a href="javascript:;" class="close_btn"><img src="../smart_order/images/close_btn.png" alt="cloase btn"></a>
             <ul>
                 <li><a href="#">브랜드스토리</a></li>
                 <li><a href="#">신메뉴</a></li>
@@ -51,7 +61,7 @@
 
         <!--contents {-->
         <div class="contents">
-            <div class="menu_top mlr_32px">
+            <div class="menu_top mlr_32px over_hidden">
                 <ul>
                     <li><a href="#">신메뉴</a></li>
                     <li><a href="#">커피</a></li>

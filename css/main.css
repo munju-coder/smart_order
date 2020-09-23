@@ -12,10 +12,18 @@ a:hover,a:active,a:visited ,a:link { text-decoration: none; }
 .smart_f_color { color: #043543; }
 .mlr_32px { margin: 0 32px; }
 .fw_bold { font-weight: 600; }
-
+.wrap { position: relative; }
 .wrap .header_wrap { border-bottom: 1px solid #ddd; padding-bottom: 10px;  padding-top: 30px; }
-/* .wrap .header_wrap header a { float: left; width: 33.3%; }
-.wrap .header_wrap header::after { content: ''; display: block; overflow: hidden; clear: both; } */
+.wrap .header_wrap header div { float: left; }
+.wrap .header_wrap header .h_middle { margin-left: 174px; width: 52%; }
+.wrap .header_wrap header .h_right a:first-child { margin-right: 10px; }
+.wrap .header_wrap header::after { content: ''; display: block; overflow: hidden; clear: both; }
+
+.wrap aside { position: absolute; width: 477px; top: 0; right: 0; background-color: #113f4d; opacity: 0.95; display: none; }
+.wrap aside ul li { padding: 20px 0 20px 30px; border-bottom: 1px solid #ddd; }
+.wrap aside ul li:first-child { padding-top: 40px; }
+.wrap aside .close_btn { position: absolute; top: 28px; right: 478px; display: inline-block; }
+.wrap aside ul li a { color: #ffffff; font-size: 25px; }
 
 .wrap .contents .menu_top ul li { float: left; margin-right: 33px;  padding-top: 30px; padding-bottom: 16px; }
 .wrap .contents .menu_top ul li:first-child { margin-left: 10px; }
